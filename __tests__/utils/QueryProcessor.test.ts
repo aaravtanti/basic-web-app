@@ -25,4 +25,11 @@ describe("QueryProcessor", () => {
             "atanti"
         ));
     });
+    test('should return name', () => {
+        const query = "name";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "aarav"
+        ));
+    });
 });
